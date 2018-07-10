@@ -1,0 +1,16 @@
+.Answer button {
+    font-size: 25px;
+    display: flex;
+    width: 100%;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border: 1px transparent solid;
+}
+.Answer button:hover {
+    color: #dce869;
+    border-color: #dce869;
+}
+.Answer button span {
+    padding-right: 10px;
+}

@@ -1,0 +1,19 @@
+.Categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Categories li {
+    font-size: 30px;
+    margin-bottom: 30px;
+    max-width: 300px;
+    width: 100%
+}
+
+.Categories li a {
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}

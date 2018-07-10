@@ -5,7 +5,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        A[[]]
+        <div className="App__Logo">
+          <a href="#" >Speedy Math</a>
+        </div>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Answer from './../Answer';
+import './Puzzle.css';
 
 class Puzzle extends Component {
   constructor(props) {

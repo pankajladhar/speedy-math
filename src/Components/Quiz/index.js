@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Puzzle from './../Puzzle';
-import { generateQuestionData } from './../../Helpers'
+import { generateQuestionData } from './../../Helpers';
+import './Quiz.css';
 
 class Quiz extends Component {
     constructor(props) {
@@ -31,10 +32,8 @@ class Quiz extends Component {
     }
 
     render() {
-        const { operands, answers } = this.state;
         return (
             <div className="App">
-                <h1>--- Math Puzzle ---</h1>
                 <h2>Correct {this.state.rightAnswers} --- Wrong  {this.state.wrongAnswers}</h2>
                 <Puzzle
                     handleClick={this.handleClick}

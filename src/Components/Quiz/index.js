@@ -44,6 +44,7 @@ class Quiz extends Component {
                         </div>
                     </div>
                     <Puzzle
+                        operand={this.props.operand}
                         handleClick={this.handleClick}
                         data={this.state.data} />
                 </div>

@@ -9,7 +9,7 @@ class Quiz extends Component {
         super(props);
 
         this.state = {
-            data: generateQuestionData(),
+            data: generateQuestionData(this.props.operand),
             rightAnswers: 0,
             wrongAnswers: 0
         };
@@ -27,7 +27,7 @@ class Quiz extends Component {
             })
         }
         this.setState({
-            data: generateQuestionData()
+            data: generateQuestionData(this.props.operand)
         })
     }
 

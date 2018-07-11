@@ -16,16 +16,21 @@ const getCorrectAnswer = (operand, nums) => {
     case "x":
       correctAnswer = nums.reduce((acc, curr) => curr = acc * curr, 1)
       break;
+    case "-":
+      correctAnswer = nums.reduce((acc, curr) => Math.abs(curr = curr - acc) , 0)
+      break;
   }
   return correctAnswer
 }
 
 const generateQuestionData = (operand) => {
-  const questionData = randomNumber(0, 100, 2);
+  let questionData = randomNumber(0, 100, 2);
+  if (operand === "-") {
+    questionData = questionData.sort((a, b) => b - a)
+  }
   const correctAnswerPostion = randomNumber(0, 4, 1)[0];
   const answers = randomNumber(0, 100, 3);
   const correctAnswer = getCorrectAnswer(operand, questionData)
-  console.log("correctAnswer", correctAnswer)
   answers.splice(correctAnswerPostion, 0, correctAnswer)
 
   return {

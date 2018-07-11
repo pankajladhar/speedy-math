@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Puzzle from './../Puzzle'
+import Quiz from './../Quiz'
 import Categories from './../Categories';
 import './App.css';
 
@@ -14,7 +14,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route path="/" exact component={Categories} />
-            <Route path="/add" component={Puzzle} />
+            <Route path="/add" component={Quiz} />
             {/* <Route component={NoMatch} /> */}
           </Switch>
         </Router>

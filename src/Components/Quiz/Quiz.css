@@ -1,0 +1,36 @@
+.PuzzleContainer {
+    margin:  0 auto;
+    background-color: #000000;
+    background-image: linear-gradient(90deg, rgba(152, 90, 21,.07) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(152, 90, 21,.13) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(152, 90, 21,.17) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(152, 90, 21,.19) 50%);
+    background-size: 13px, 29px, 37px, 53px;
+    border-radius: 5px;
+    padding: 0px 20px 20px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.Results {
+    font-size: 20px;
+    padding: 10px 5px 10px 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Results__Correct {
+    display: flex;
+    padding-right: 10px;
+}
+
+.Results__Incorrect {
+    display: flex
+}
+
+.Results__Correct span, .Results__Incorrect span {
+    width: 25px;
+    text-align: center;
+}

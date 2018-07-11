@@ -34,10 +34,19 @@ class Quiz extends Component {
     render() {
         return (
             <div className="App">
-                <h2>Correct {this.state.rightAnswers} --- Wrong  {this.state.wrongAnswers}</h2>
-                <Puzzle
-                    handleClick={this.handleClick}
-                    data={this.state.data} />
+                <div className="PuzzleContainer">
+                    <div className="Results">
+                        <div className="Results__Correct">
+                            Correct <span>{this.state.rightAnswers}</span>
+                        </div>
+                        <div className="Results__Incorrect">
+                            Wrong <span>{this.state.wrongAnswers}</span>
+                        </div>
+                    </div>
+                    <Puzzle
+                        handleClick={this.handleClick}
+                        data={this.state.data} />
+                </div>
             </div>
         );
     }

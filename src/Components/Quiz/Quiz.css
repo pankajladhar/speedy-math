@@ -1,5 +1,5 @@
 .PuzzleContainer {
-    margin:  0 auto;
+    margin: 0 auto;
     background-color: #000000;
     background-image: linear-gradient(90deg, rgba(152, 90, 21,.07) 50%, transparent 50%),
     linear-gradient(90deg, rgba(152, 90, 21,.13) 50%, transparent 50%),
@@ -8,9 +8,17 @@
     background-size: 13px, 29px, 37px, 53px;
     border-radius: 5px;
     padding: 0px 20px 20px;
-    max-width: 800px;
-    width: 100%;
+    margin: 0 16px;
+    width: auto;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 769px) {
+    .PuzzleContainer {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .Results {

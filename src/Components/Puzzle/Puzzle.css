@@ -1,13 +1,24 @@
-  .Puzzle {
-    background: #1e683d;
-    color: #fff;
-    padding: 20px 40px;
-    box-shadow: inset 1px 1px 10px #0f0f0f;
-    border-radius: 5px;
-    min-height: 400px;
+.Puzzle {
+  background: #1e683d;
+  color: #fff;
+  padding: 20px 20px;
+  box-shadow: inset 1px 1px 10px #0f0f0f;
+  border-radius: 5px;
+  min-height: 100%;
 }
 
 .Puzzle h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0 0 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .Puzzle {
+    padding: 20px 40px;
+    min-height: 400px;
+  }
+
+  .Puzzle h1 {
+    font-size: 40px;
+  }
 }

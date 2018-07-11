@@ -8,7 +8,7 @@
     color: #fff;
     border: 1px transparent solid;
 }
-.Answer button:hover {
+.Answer button:hover, .Answer button:active {
     color: #dce869;
     border-color: #dce869;
 }

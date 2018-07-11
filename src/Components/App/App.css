@@ -12,8 +12,14 @@
 
 .App__Logo a {
   font-family: Arizonia, sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   color: #fff;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 3px 3px 6px #000;
+}
+
+@media screen and (min-width: 600px) {
+  .App__Logo a {
+    font-size: 80px
+  }
 }

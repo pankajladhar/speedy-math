@@ -17,7 +17,12 @@ const getCorrectAnswer = (operand, nums) => {
       correctAnswer = nums.reduce((acc, curr) => curr = acc * curr, 1)
       break;
     case "-":
-      correctAnswer = nums.reduce((acc, curr) => Math.abs(curr = curr - acc) , 0)
+      correctAnswer = nums.reduce((acc, curr) => Math.abs(curr = curr - acc), 0)
+      break;
+    case "/":
+      const remainder = ~~(nums[0] / nums[1]);
+      const quotient = ~~(nums[0] / nums[1]);
+      correctAnswer = `${quotient} Quotient and ${remainder} remainder`
       break;
   }
   return correctAnswer
@@ -25,7 +30,7 @@ const getCorrectAnswer = (operand, nums) => {
 
 const generateQuestionData = (operand) => {
   let questionData = randomNumber(0, 100, 2);
-  if (operand === "-") {
+  if (operand === "-" || operand === "/") {
     questionData = questionData.sort((a, b) => b - a)
   }
   const correctAnswerPostion = randomNumber(0, 4, 1)[0];

@@ -17,6 +17,7 @@ class App extends Component {
             <Route path="/add" render={(props) => <Quiz {...props} operand="+" />}/>
             <Route path="/sub" render={(props) => <Quiz {...props} operand="-" />}/>
             <Route path="/multiply" render={(props) => <Quiz {...props} operand="x" />}/>
+            {/* <Route path="/division" render={(props) => <Quiz {...props} operand="/" />}/> */}
             {/* <Route component={NoMatch} /> */}
           </Switch>
         </Router>

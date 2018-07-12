@@ -14,11 +14,11 @@ const Categories = [
         uri: "/multiply",
         operand: "*"
     },
-    {
-        text: "Division",
-        uri: "/division",
-        operand: "/"
-    }
+    // {
+    //     text: "Division",
+    //     uri: "/division",
+    //     operand: "/"
+    // }
 ]
 
 export default Categories

@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild" : "node ./scripts/copy.js && node ./scripts/delete.js",
+    "postbuild" : "node ./scripts/copy.js && node ./scripts/delete.js && ./node_modules/.bin/workbox injectManifest",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

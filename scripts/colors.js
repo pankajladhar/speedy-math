@@ -22,6 +22,9 @@ const colors = () => {
     return {
         green : (msg) => {
             return `${COLORS_OBJ['green']}${msg}${COLORS_OBJ['reset']}`
+        },
+        red : (msg) => {
+            return `${COLORS_OBJ['red']}${msg}${COLORS_OBJ['reset']}`
         }
     }
 }

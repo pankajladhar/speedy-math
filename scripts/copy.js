@@ -7,15 +7,19 @@ const colors = require('./colors')
 const files = [
     {
         "src" : `${srcDir}/serviceworker.js`,
-        "dest": `${buildDir}'serviceworker.js'`
+        "dest": `${buildDir}/serviceworker.js`
+    },
+    {
+        "src" : `${srcDir}/serviceworker.js`,
+        "dest": `${buildDir}/serviceworker.js`
     }
 ]
 
-const copy = () => {
+const copyFiles = () => {
     files.map(({src, dest})=>{
         fs.copyFileSync(src, dest);
         console.log(colors.green(`${src} copied.`));
     })
 }
 
-copy()
+copyFiles()

@@ -8,11 +8,13 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "workbox-cli": "^3.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild" : "node ./scripts/copy.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

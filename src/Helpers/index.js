@@ -1,11 +1,4 @@
-const randomNumber = (min, max, times) => {
-  let results = [];
-  while (times > 0) {
-    results.push(Math.round(Math.random() * (max - min) + min))
-    --times
-  }
-  return results;
-}
+import Number from './Number';
 
 const getCorrectAnswer = (operand, nums) => {
   let correctAnswer;
@@ -29,12 +22,12 @@ const getCorrectAnswer = (operand, nums) => {
 }
 
 const generateQuestionData = (operand) => {
-  let questionData = randomNumber(0, 100, 2);
+  let questionData = Number.Random(0, 100, 2);
   if (operand === "-" || operand === "/") {
-    questionData = questionData.sort((a, b) => b - a)
+    questionData = Number.Sort(questionData, 'desc')
   }
-  const correctAnswerPostion = randomNumber(0, 4, 1)[0];
-  const answers = randomNumber(0, 100, 3);
+  const correctAnswerPostion = Number.Random(0, 4, 1)[0];
+  const answers = Number.Random(0, 100, 3);
   const correctAnswer = getCorrectAnswer(operand, questionData)
   answers.splice(correctAnswerPostion, 0, correctAnswer)
 

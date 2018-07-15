@@ -38,7 +38,15 @@
     display: flex
 }
 
-.Results__Correct span, .Results__Incorrect span {
+.Results__Count {
     width: 25px;
     text-align: center;
+}
+
+.Results__Symbol--Correct {
+    color: #8BC34A;
+}
+
+.Results__Symbol--Incorrect{
+    color: #E91E63;
 }

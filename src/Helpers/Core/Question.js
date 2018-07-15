@@ -3,7 +3,7 @@ import Number from './../Number';
 const obj = {
     "single": [1, 9],
     "double": [10, 99],
-    "triple": [100, 999],
+    "triple": [100, 999]
 }
 
 

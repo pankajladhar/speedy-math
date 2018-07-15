@@ -9,13 +9,31 @@ class Quiz extends Component {
         super(props);
 
         this.state = {
-            counter : 1,
+            counter: 1,
             level: "single",
             data: QuestionData("single", this.props.operator),
             rightAnswers: 0,
             wrongAnswers: 0
         };
+
         this.handleClick = this.handleClick.bind(this);
+        this.setLevel = this.setLevel.bind(this);
+    }
+
+    setLevel(value) {
+        if (value > 5 && value <= 15) {
+            this.setState({
+                level: "double"
+            })
+        } else if (value > 15 && value <= 25) {
+            this.setState({
+                level: "triple"
+            })
+        } else {
+            this.setState({
+                level: "random"
+            })
+        }
     }
 
     handleClick(val) {
@@ -29,7 +47,10 @@ class Quiz extends Component {
             })
         }
         this.setState({
+            counter: this.state.counter + 1,
             data: QuestionData(this.state.level, this.props.operator)
+        }, () => {
+            this.state.counter > 5 && this.setLevel(this.state.counter)
         })
     }
 
@@ -39,10 +60,12 @@ class Quiz extends Component {
                 <div className="PuzzleContainer">
                     <div className="Results">
                         <div className="Results__Correct">
-                            Correct <span>{this.state.rightAnswers}</span>
+                            <span className="Results__Symbol--Correct">&#10004;</span>
+                            <span className="Results__Count">{this.state.rightAnswers}</span>
                         </div>
                         <div className="Results__Incorrect">
-                            Wrong <span>{this.state.wrongAnswers}</span>
+                            <span className="Results__Symbol--Incorrect">&#x2718;</span>
+                            <span className="Results__Count">{this.state.wrongAnswers}</span>
                         </div>
                     </div>
                     <Puzzle

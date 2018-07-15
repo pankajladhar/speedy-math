@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import Answer from './../Answer';
+import PropTypes from 'prop-types';
 import './Puzzle.css';
 
 class Puzzle extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { data, handleClick } = this.props
     return (
@@ -29,6 +26,14 @@ class Puzzle extends Component {
       </div>
     )
   }
+}
+
+Puzzle.propTypes = {
+  data: PropTypes.shape({
+    question: PropTypes.string.isRequired,
+    answers: PropTypes.arrayOf(PropTypes.number).isRequired
+  }).isRequired,
+  handleClick: PropTypes.func.isRequired
 }
 
 export default Puzzle;

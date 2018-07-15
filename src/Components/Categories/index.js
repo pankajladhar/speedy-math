@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import CategoriesData from './../../Data/Categories'
-import PropTypes from 'prop-types';
 import './Categories.css'
 
 class Categories extends Component {
@@ -21,9 +20,5 @@ class Categories extends Component {
         );
     }
 }
-
-Categories.propTypes = {
-
-};
 
 export default Categories;

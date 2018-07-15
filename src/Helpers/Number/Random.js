@@ -1,8 +1,11 @@
 const Random = (min, max, frequency=2) => {
     let results = [];
     while (frequency > 0) {
-        results.push(Math.round(Math.random() * (max - min) + min))
-        --frequency
+        let num = Math.round(Math.random() * (max - min) + min);
+        if(!results.includes(num)) {
+            results.push(num)
+            --frequency
+        }
     }
     return results;
 }

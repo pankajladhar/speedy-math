@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "react-test-renderer": "^16.4.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "react-scripts": "1.1.4"
   },
   "dependencies": {
@@ -14,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild" : "node ./scripts/copy.js && node ./scripts/delete.js && ./node_modules/.bin/workbox injectManifest",
+    "postbuild": "node ./scripts/copy.js && node ./scripts/delete.js && ./node_modules/.bin/workbox injectManifest",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

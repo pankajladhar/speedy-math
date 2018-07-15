@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Answer renders correctly 1`] = `
+<div
+  className="Answer"
+>
+  <button
+    className="Answer--Btn"
+    onClick={[Function]}
+  >
+    <span>
+      1
+      ) 
+    </span>
+     
+    12
+  </button>
+</div>
+`;

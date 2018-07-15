@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Answer.css';
 
 class Answer extends Component {
@@ -22,5 +23,11 @@ class Answer extends Component {
     )
   }
 }
+
+Answer.propTypes = {
+  value: PropTypes.number.isRequired,
+  currentIndex: PropTypes.number.isRequired,
+  handleClick: PropTypes.func.isRequired
+};
 
 export default Answer;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Puzzle from './../Puzzle';
-import { generateQuestionData } from './../../Helpers';
+import QuestionData from './../../Helpers/Core/QuestionData';
 import './Quiz.css';
 
 class Quiz extends Component {
@@ -9,7 +9,9 @@ class Quiz extends Component {
         super(props);
 
         this.state = {
-            data: generateQuestionData(this.props.operand),
+            counter : 1,
+            level: "single",
+            data: QuestionData("single", this.props.operator),
             rightAnswers: 0,
             wrongAnswers: 0
         };
@@ -27,7 +29,7 @@ class Quiz extends Component {
             })
         }
         this.setState({
-            data: generateQuestionData(this.props.operand)
+            data: QuestionData(this.state.level, this.props.operator)
         })
     }
 
@@ -44,7 +46,7 @@ class Quiz extends Component {
                         </div>
                     </div>
                     <Puzzle
-                        operand={this.props.operand}
+                        operand={this.props.operator}
                         handleClick={this.handleClick}
                         data={this.state.data} />
                 </div>

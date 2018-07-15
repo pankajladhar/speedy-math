@@ -8,12 +8,12 @@ class Puzzle extends Component {
   }
 
   render() {
-    const { data, handleClick, speechSynthesisSupported, operand } = this.props
+    const { data, handleClick } = this.props
     return (
       <div className="Puzzle">
         <h1 className="Puzzle__Statement">
-          What is {data.questionData[0]} {operand} {data.questionData[1]} ?
-          </h1>
+          {data.question}
+        </h1>
         <div className="Puzzle__Answers">
           {data.answers.map((answer, i) => {
             return (
@@ -21,7 +21,6 @@ class Puzzle extends Component {
                 currentIndex={i + 1}
                 key={`${answer}-${i}`}
                 value={answer}
-                speechSynthesisSupported={speechSynthesisSupported}
                 handleClick={handleClick}
               />
             )

@@ -6,7 +6,6 @@ import './Quiz.css';
 
 class Quiz extends Component {
     constructor(props) {
-        console.log("i am here")
         super(props);
 
         this.state = {

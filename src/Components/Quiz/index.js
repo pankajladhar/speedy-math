@@ -71,6 +71,9 @@ class Quiz extends Component {
                     <Puzzle
                         handleClick={this.handleClick}
                         data={this.state.data} />
+                    <button className="Next_btn Wood" onClick={this.handleClick}>
+                        Next >>
+                    </button>
                 </div>
             </div>
         );

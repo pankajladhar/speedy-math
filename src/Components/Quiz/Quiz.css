@@ -1,4 +1,5 @@
 .PuzzleContainer {
+    position: relative;
     margin: 0 auto;
     background-color: #000000;
     background-image: linear-gradient(90deg, rgba(152, 90, 21,.07) 50%, transparent 50%),
@@ -49,4 +50,14 @@
 
 .Results__Symbol--Incorrect{
     color: #E91E63;
+}
+
+.Next_btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 10px 10px 20px;
+    text-transform: capitalize;   
 }

@@ -6,6 +6,7 @@ import './Quiz.css';
 
 class Quiz extends Component {
     constructor(props) {
+        console.log("i am here")
         super(props);
 
         this.state = {
@@ -69,7 +70,6 @@ class Quiz extends Component {
                         </div>
                     </div>
                     <Puzzle
-                        operand={this.props.operator}
                         handleClick={this.handleClick}
                         data={this.state.data} />
                 </div>

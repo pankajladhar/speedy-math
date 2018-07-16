@@ -6,6 +6,16 @@ const obj = {
     "triple": [100, 999]
 }
 
+const getCorrectAnswerForComparision = (nums) => {
+    if(nums[0] === nums[1]) {
+        return "="
+    } else if(nums[0] > nums[1]) {
+        return ">"
+    } else if(nums[0] < nums[1]) {
+        return "<"
+    }
+}
+
 
 const getCorrectAnswer = (operator, nums) => {
     let correctAnswer;
@@ -18,6 +28,9 @@ const getCorrectAnswer = (operator, nums) => {
             break;
         case "-":
             correctAnswer = nums.reduce((acc, curr) => Math.abs(curr = curr - acc), 0)
+            break;
+        case "___":
+            correctAnswer = getCorrectAnswerForComparision(nums)
             break;
         case "/":
             const remainder = ~~(nums[0] / nums[1]);

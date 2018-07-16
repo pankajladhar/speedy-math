@@ -1,23 +1,23 @@
 const Categories = [
     {
         text: "Addition",
-        uri: "/add",
-        operand: "+"
+        uri: "/add"
     },
     {
         text: "Subtraction",
-        uri: "/sub",
-        operand: "-"
+        uri: "/sub"
     },
     {
         text: "Multiply",
-        uri: "/multiply",
-        operand: "*"
+        uri: "/multiply"
+    },
+    {
+        text: "Comparison",
+        uri: "/comparison"
     },
     // {
     //     text: "Division",
-    //     uri: "/division",
-    //     operand: "/"
+    //     uri: "/division"
     // }
 ]
 

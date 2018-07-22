@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "6.1"
+# install: true  (this will run npm install command)
+install:
+  - npm install
+# script: true  (this will run npm test command)
+scripts:
+  - npm run test

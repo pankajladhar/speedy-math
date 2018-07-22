@@ -4,6 +4,19 @@ import Puzzle from './../Puzzle';
 import QuestionData from './../../Helpers/Core/QuestionData';
 import './Quiz.css';
 
+
+let debounceCheck = 0;
+
+function debounce(duration) {
+    if (debounceCheck) { return true; }
+
+    debounceCheck = setTimeout(() => {
+        debounceCheck = 0;
+    }, duration || 500);
+
+    return false;
+}
+
 class Quiz extends Component {
     constructor(props) {
         super(props);
@@ -37,6 +50,7 @@ class Quiz extends Component {
     }
 
     handleClick(val) {
+        if (debounce()) { return; }
         if (val === this.state.data.correctAnswer) {
             this.setState({
                 rightAnswers: this.state.rightAnswers + 1
@@ -71,9 +85,9 @@ class Quiz extends Component {
                     <Puzzle
                         handleClick={this.handleClick}
                         data={this.state.data} />
-                    <button className="Next_btn Wood" onClick={this.handleClick}>
+                    {/* <button className="Next_btn Wood" onClick={this.handleClick}>
                         Next >>
-                    </button>
+                    </button> */}
                 </div>
             </div>
         );

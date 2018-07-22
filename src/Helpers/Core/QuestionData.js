@@ -18,13 +18,18 @@ const getLevelName = (num) => {
 }
 
 const QuestionData = (level, operator) => {
+    let answers;
     if (level === "random") {
         level = getLevelName(Number.Random(1, 3, 1)[0]);
     }
     const result = Question(level, operator)
     const correctAnswerPostion = Number.Random(0, 4, 1)[0];
-    const correctAndLength = result.correctAnswer.toString().length;
-    const answers = Number.RandomWithSize(correctAndLength, 3, result.correctAnswer);
+    if (operator === "___") {
+        answers = Number.RandomComparator(3, result.correctAnswer);
+    } else {
+        const correctAndLength = result.correctAnswer.toString().length;
+        answers = Number.RandomWithSize(correctAndLength, 3, result.correctAnswer);
+    }
     answers.splice(correctAnswerPostion, 0, result.correctAnswer)
 
     return {

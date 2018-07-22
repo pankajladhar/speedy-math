@@ -42,7 +42,7 @@ const getCorrectAnswer = (operator, nums) => {
 }
 
 const Question = (level, operator) => {
-    let operands = Number.Random(...obj[level], 2);
+    let operands = Number.Random(...obj[level], 2, operator);
     if (operator === "-" || operator === "/") {
         operands = Number.Sort(operands, 'desc')
     }

@@ -21,6 +21,7 @@
     "build": "react-scripts build",
     "postbuild": "node ./scripts/copy.js && node ./scripts/delete.js && ./node_modules/.bin/workbox injectManifest",
     "test": "react-scripts test --env=jsdom",
+    "test:coverage": "npm run test -- --coverage",
     "eject": "react-scripts eject"
   }
 }

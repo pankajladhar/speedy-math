@@ -6,4 +6,4 @@ install:
   - npm install
 # script: true  (this will run npm test command)
 scripts:
-  - npm run test
+  - npm run test:coverage

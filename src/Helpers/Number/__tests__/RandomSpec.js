@@ -16,6 +16,15 @@ describe('Random', () => {
 
         expect(numbers[0]).toBeGreaterThanOrEqual(10);
         expect(numbers[0]).toBeLessThanOrEqual(99);
+    })
 
+    it('should generate 2 random number within range when operator "___" is passed ', () =>{
+        const numbers = Random(10, 99, 2);
+        expect(numbers.length).toEqual(2);
+        expect(numbers[0]).toBeGreaterThanOrEqual(10);
+        expect(numbers[0]).toBeLessThanOrEqual(99);
+
+        expect(numbers[0]).toBeGreaterThanOrEqual(10);
+        expect(numbers[0]).toBeLessThanOrEqual(99);
     })
 })

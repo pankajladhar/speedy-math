@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Quiz from './../Quiz'
 import Categories from './../Categories';
 import './App.css';
-
+// console.log("process.env.NODE_ENV", process.env.NODE_ENV)
+const path = process.env.NODE_ENV === "production" ? "/speedy-math" : '/'
 class App extends Component {
   render() {
     return (
@@ -11,14 +12,14 @@ class App extends Component {
         <Router>
           <div>
             <div className="App__Logo">
-              <Link to="/">Speedy Math</Link>
+              <Link to={`${path}/`}>Speedy Math</Link>
             </div>
             <Switch>
-              <Route path="/" exact component={Categories} />
-              <Route path="/add" render={(props) => <Quiz {...props} operator="+" />} />
-              <Route path="/sub" render={(props) => <Quiz {...props} operator="-" />} />
-              <Route path="/multiply" render={(props) => <Quiz {...props} operator="x" />} />
-              <Route path="/comparison" render={(props) => <Quiz {...props} operator="___" />} />
+            <Route path={`${path}/`} exact component={Categories} />
+              <Route path={`${path}/add`} render={(props) => <Quiz {...props} operator="+" />} />
+              <Route path={`${path}/sub`} render={(props) => <Quiz {...props} operator="-" />} />
+              <Route path={`${path}/multiply`} render={(props) => <Quiz {...props} operator="x" />} />
+              <Route path={`${path}/comparison`} render={(props) => <Quiz {...props} operator="___" />} />
               {/* <Route path="/division" render={(props) => <Quiz {...props} operand="/" />}/> */}
               {/* <Route component={NoMatch} /> */}
             </Switch>
@@ -30,3 +31,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+ /* */ 

@@ -1,4 +1,4 @@
-importScripts('/static/js/workbox-sw.js');
+importScripts('./static/js/workbox-sw.js');
 workbox.skipWaiting();
 workbox.clientsClaim();
 

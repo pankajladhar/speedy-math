@@ -22,7 +22,6 @@
     "postbuild": "node ./scripts/copy.js && node ./scripts/delete.js && ./node_modules/.bin/workbox injectManifest",
     "release": "npm run build && git checkout gh-pages && sh ./build.sh",
     "test": "react-scripts test --env=jsdom",
-    "test:coverage": "npm run test -- --coverage",
-    "eject": "react-scripts eject"
+    "test:coverage": "npm run test -- --coverage"
   }
 }

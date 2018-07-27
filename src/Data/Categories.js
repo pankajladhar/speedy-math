@@ -1,23 +1,25 @@
+const path = process.env.NODE_ENV === "production" ? "/speedy-math" : '/'
+
 const Categories = [
     {
         text: "Addition",
-        uri: "/add"
+        uri: `${path}/add`
     },
     {
         text: "Subtraction",
-        uri: "/sub"
+        uri: `${path}/sub`
     },
     {
         text: "Multiply",
-        uri: "/multiply"
+        uri: `${path}/multiply`
     },
     {
         text: "Comparison",
-        uri: "/comparison"
+        uri: `${path}/comparison`
     },
     // {
     //     text: "Division",
-    //     uri: "/division"
+    //     uri: `${path}/division`
     // }
 ]
 

@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
-  "start_url": "/speedy-math",
+  "start_url": "/speedy-math/",
   "icons": [
     {
       "src": "images/icon-72x72.png",

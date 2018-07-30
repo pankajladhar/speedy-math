@@ -1,4 +1,4 @@
-const path = process.env.NODE_ENV === "production" ? "/speedy-math" : '/'
+const path = process.env.NODE_ENV === "production" ? "/speedy-math" : ''
 
 const Categories = [
     {

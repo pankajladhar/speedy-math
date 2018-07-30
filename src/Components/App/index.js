@@ -4,7 +4,7 @@ import Quiz from './../Quiz'
 import Categories from './../Categories';
 import './App.css';
 // console.log("process.env.NODE_ENV", process.env.NODE_ENV)
-const path = process.env.NODE_ENV === "production" ? "/speedy-math" : '/'
+const path = process.env.NODE_ENV === "production" ? "/speedy-math" : ''
 class App extends Component {
   render() {
     return (

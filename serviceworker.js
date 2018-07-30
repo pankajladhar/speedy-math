@@ -56,15 +56,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "b8ff0a71c3f6ae8cb5831de64da77735"
+    "revision": "af4a3e973e9153c6d3fd3872e4116a74"
   },
   {
     "url": "static/css/main.df1a36ec.css",
     "revision": "57532c137b23637c5e3347f681d8f70e"
   },
   {
-    "url": "static/js/main.e91ac5b2.js",
-    "revision": "081cac528ed57e1a81aec059e37a0cf3"
+    "url": "static/js/main.e311cf12.js",
+    "revision": "2e2406bde2a253c17f81043c218bd7e0"
   },
   {
     "url": "static/js/workbox-sw.js",

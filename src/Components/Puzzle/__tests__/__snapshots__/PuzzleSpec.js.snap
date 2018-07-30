@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puzzle renders correctly 1`] = `
+<div
+  className="Puzzle"
+>
+  <h1
+    className="Puzzle__Statement"
+  >
+    Sample question ?
+  </h1>
+  <div
+    className="Puzzle__Answers"
+  >
+    <div
+      className="Answer"
+    >
+      <button
+        className="Answer--Btn"
+        onClick={[Function]}
+      >
+        <span>
+          1
+          ) 
+        </span>
+         
+        1
+      </button>
+    </div>
+    <div
+      className="Answer"
+    >
+      <button
+        className="Answer--Btn"
+        onClick={[Function]}
+      >
+        <span>
+          2
+          ) 
+        </span>
+         
+        5
+      </button>
+    </div>
+    <div
+      className="Answer"
+    >
+      <button
+        className="Answer--Btn"
+        onClick={[Function]}
+      >
+        <span>
+          3
+          ) 
+        </span>
+         
+        8
+      </button>
+    </div>
+    <div
+      className="Answer"
+    >
+      <button
+        className="Answer--Btn"
+        onClick={[Function]}
+      >
+        <span>
+          4
+          ) 
+        </span>
+         
+        9
+      </button>
+    </div>
+  </div>
+</div>
+`;

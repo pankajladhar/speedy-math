@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Quiz from './../Quiz'
 import Categories from './../Categories';
 import './App.css';
@@ -21,7 +21,7 @@ class App extends Component {
               <Route path={`${path}/multiply`} render={(props) => <Quiz {...props} operator="x" />} />
               <Route path={`${path}/comparison`} render={(props) => <Quiz {...props} operator="___" />} />
               {/* <Route path="/division" render={(props) => <Quiz {...props} operand="/" />}/> */}
-              <Route component={Categoriesk} />
+              <Route component={Categories} />
             </Switch>
           </div>
         </Router>

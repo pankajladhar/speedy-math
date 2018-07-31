@@ -13,7 +13,7 @@ An application which allows user (small kids) to practice basic **Mathematics** 
 1. Random level : Mixture of above all
 
 ## Contributing
-Feel free to give feedback or raise issue. I'd love to have your helping hand on GFontsSpace! See [CONTRIBUTING.md](https://github.com/pankajladhar/speedy-math/blob/master/CONTRIBUTING.md) for more information on how to get started.
+Feel free to give feedback or raise issue. I'd love to have your helping hand on speedy-math ! See [CONTRIBUTING.md](https://github.com/pankajladhar/speedy-math/blob/master/CONTRIBUTING.md) for more information on how to get started.
 
 ## License
 [MIT](https://github.com/pankajladhar/speedy-math/blob/master/LICENSE) Licensed. Copyright (c) [Pankaj Ladhar](mailto:ladharpankaj@gmail.com) 2018.

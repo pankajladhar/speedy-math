@@ -6,7 +6,7 @@ An application which allows user (small kids) to practice basic **Mathematics** 
 1. Multiply
 1. Comparision
 
-This application has four levels.
+**This application has four levels.**
 1. Single level :  Operations on single digit
 1. Double level : Operations on dobule digits
 1. Triple level : Operations on triple digits

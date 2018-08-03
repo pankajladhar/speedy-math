@@ -12,6 +12,12 @@ An application which allows user (small kids) to practice basic **Mathematics** 
 1. Triple level : Operations on triple digits
 1. Random level : Mixture of above all
 
+## Features
+* Responsive nature
+* PWA (Progressive web app)
+    * Offline support
+    * install as app
+
 ## Contributing
 Feel free to give feedback or raise issue. I'd love to have your helping hand on speedy-math ! See [CONTRIBUTING.md](https://github.com/pankajladhar/speedy-math/blob/master/CONTRIBUTING.md) for more information on how to get started.
 

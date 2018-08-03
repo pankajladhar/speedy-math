@@ -1,4 +1,4 @@
-# Speedy Math
+# Speedy Math  [![Build Status](https://travis-ci.org/pankajladhar/speedy-math.svg?branch=master)](https://travis-ci.org/pankajladhar/speedy-math)
 
 An application which allows user (small kids) to practice basic **Mathematics** operations like :
 1. Addition

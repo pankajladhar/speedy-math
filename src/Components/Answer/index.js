@@ -16,7 +16,7 @@ class Answer extends Component {
     const { value, currentIndex } = this.props;
     return (
       <div className="Answer">
-        <button className="Answer--Btn" onClick={this.handleClick}>
+        <button onTouchStart={()=>{}} className="Answer--Btn" onClick={this.handleClick}>
           <span>{currentIndex}) </span> {value}
         </button>
       </div>

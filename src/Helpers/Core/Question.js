@@ -47,7 +47,7 @@ const Question = (level, operator) => {
         operands = Number.Sort(operands, 'desc')
     }
     return {
-        questionString: `What is ${operands[0]} ${operator} ${operands[1]} ?`,
+        questionString: `${operands[0]} ${operator} ${operands[1]} = ___ ?`,
         correctAnswer: getCorrectAnswer(operator, operands)
     }
 }

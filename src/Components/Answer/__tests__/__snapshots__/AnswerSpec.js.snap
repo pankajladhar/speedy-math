@@ -7,6 +7,7 @@ exports[`Answer renders correctly 1`] = `
   <button
     className="Answer--Btn"
     onClick={[Function]}
+    onTouchStart={[Function]}
   >
     <span>
       1

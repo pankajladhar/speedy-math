@@ -18,6 +18,7 @@ exports[`Puzzle renders correctly 1`] = `
       <button
         className="Answer--Btn"
         onClick={[Function]}
+        onTouchStart={[Function]}
       >
         <span>
           1
@@ -33,6 +34,7 @@ exports[`Puzzle renders correctly 1`] = `
       <button
         className="Answer--Btn"
         onClick={[Function]}
+        onTouchStart={[Function]}
       >
         <span>
           2
@@ -48,6 +50,7 @@ exports[`Puzzle renders correctly 1`] = `
       <button
         className="Answer--Btn"
         onClick={[Function]}
+        onTouchStart={[Function]}
       >
         <span>
           3
@@ -63,6 +66,7 @@ exports[`Puzzle renders correctly 1`] = `
       <button
         className="Answer--Btn"
         onClick={[Function]}
+        onTouchStart={[Function]}
       >
         <span>
           4

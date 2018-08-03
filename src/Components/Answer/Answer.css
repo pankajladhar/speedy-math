@@ -8,10 +8,25 @@
     color: #fff;
     border: 1px transparent solid;
 }
-.Answer button:hover, .Answer button:active {
+
+.Answer button:hover {
+    -webkit-tap-highlight-color: transparent;
     color: #dce869;
     border-color: #dce869;
 }
+
+.Answer button:active {
+    -webkit-tap-highlight-color: transparent;
+    color: #dce869;
+    border-color: #dce869;
+}
+
+.Answer button:focus{
+    -webkit-tap-highlight-color: transparent;
+    color: #dce869;
+    border-color: #dce869;
+}
+
 .Answer button span {
     padding-right: 10px;
 }

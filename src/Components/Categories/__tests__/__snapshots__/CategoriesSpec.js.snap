@@ -1,48 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Categories renders correctly 1`] = `
-<ul
-  className="Categories"
+<div
+  className="Categories__Wrapper"
 >
-  <li
-    className="Wood"
+  <header
+    className="Header"
   >
-    <a
-      href="/add"
-      onClick={[Function]}
+    <div
+      className="App__Logo"
     >
-      Addition
-    </a>
-  </li>
-  <li
-    className="Wood"
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Speedy Math
+      </a>
+    </div>
+  </header>
+  <ul
+    className="Categories"
   >
-    <a
-      href="/sub"
-      onClick={[Function]}
+    <li
+      className="Wood"
     >
-      Subtraction
-    </a>
-  </li>
-  <li
-    className="Wood"
-  >
-    <a
-      href="/multiply"
-      onClick={[Function]}
+      <a
+        href="/add"
+        onClick={[Function]}
+      >
+        Addition
+      </a>
+    </li>
+    <li
+      className="Wood"
     >
-      Multiply
-    </a>
-  </li>
-  <li
-    className="Wood"
-  >
-    <a
-      href="/comparison"
-      onClick={[Function]}
+      <a
+        href="/sub"
+        onClick={[Function]}
+      >
+        Subtraction
+      </a>
+    </li>
+    <li
+      className="Wood"
     >
-      Comparison
-    </a>
-  </li>
-</ul>
+      <a
+        href="/multiply"
+        onClick={[Function]}
+      >
+        Multiply
+      </a>
+    </li>
+    <li
+      className="Wood"
+    >
+      <a
+        href="/comparison"
+        onClick={[Function]}
+      >
+        Comparison
+      </a>
+    </li>
+  </ul>
+</div>
 `;

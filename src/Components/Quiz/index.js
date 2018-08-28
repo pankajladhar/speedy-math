@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Header from './../Header';
 import Puzzle from './../Puzzle';
 import QuestionData from './../../Helpers/Core/QuestionData';
 import './Quiz.css';
@@ -71,6 +72,7 @@ class Quiz extends Component {
     render() {
         return (
             <div className="App">
+                <Header showBackButton/>
                 <div className="PuzzleContainer">
                     <div className="Results">
                         <div className="Results__Correct">

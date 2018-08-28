@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-test-renderer": "^16.4.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "react-scripts": "1.1.4",
     "react-front-cli": "^1.1.3",
-    "run-git-command": "^1.2.0"
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.1",
+    "run-git-command": "^1.2.1"
   },
   "dependencies": {
     "react": "^16.4.1",

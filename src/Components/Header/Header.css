@@ -1,0 +1,26 @@
+
+.Header__WithBack .App__Logo a.back-btn { 
+    display: none
+}
+
+@media screen and (max-width: 768px) { 
+    .Header__WithBack {
+        background: rgb(150, 109, 22, 0.5);
+        position: relative;
+        top: -15px
+    }
+    .Header__WithBack .App__Logo a{
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    
+    .Header__WithBack .App__Logo a.back-btn {
+        display: block;
+        position: absolute;
+        left: 10px;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        top: 8px;
+    }
+}

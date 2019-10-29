@@ -5,6 +5,15 @@
   margin: 0 auto;
 }
 
+.Offline-Banner {
+  background:  red;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+}
+
 .App__Logo {
   text-align: center;
   margin-top: 15px;
